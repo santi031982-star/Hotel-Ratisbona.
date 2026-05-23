@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS-registrate.css">
+    <link rel="stylesheet" href="estilo-web-hotel.css">
+    <title>Formulario</title>
+</head>
+<body>
+<header class="header">
+        <div class="logo">
+    <a href="indexhoteles.HTML">
+        <img src="IMG/LOGO-HOTEL2.gif" alt="Logo Hotel">
+    </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="gastronomia.HTML">Gastronomia</a></li>
+                <li><a href="experiencias.HTML">Experiencias</a></li>
+                <li><a href="habitaciones.HTML">Habitaciones</a></li>
+                <li><a href="formulario-web.html">Registrate</a></li>
+        </ul>
+    </nav>
+        <a class="btn" href="paquetes.HTML"><button>Paquetes</button></a>
+    </header>
+<div class="contenedor-imagen">
+
+    <img src="Formulario /swimming-pool.jpg">
+
+    <div class="formulario">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="cd53c601-377b-4520-b669-51ff1e293b2d">
+
+            <h2><i class="fa-solid fa-envelope"></i>Registrate</h2>
+
+            <p class="subtitle">
+                Registrate para poder formar parte de nuestro Hotel
+            </p>
+
+            <div class="input-group">
+
+                <label for="name">
+                    <i class="fa-solid fa-user"></i> Nombres y Apellidos
+                </label>
+
+                <input type="text" name="name" id="name"
+                placeholder="Ingresa Nombres y Apellidos" required>
+
+                <label for="phone">
+                    <i class="fa-solid fa-phone"></i> Teléfono
+                </label>
+
+                <input type="tel" name="phone" id="phone"
+                placeholder="Agrega tu número" required>
+
+                <label for="email">
+                    <i class="fa-solid fa-at"></i> Email
+                </label>
+
+                <input type="email" name="email" id="email"
+                placeholder="Agrega tu Email" required>
+
+                <label for="Fecha y Dia">
+                    <i class="fa-solid fa-at"></i> Fecha
+                </label>
+
+                <input type="fecha y dia" name="fecha" id="fecha"
+                placeholder="Colocar la fecha correspondiente" required>
+
+                <label for="Asunto">
+                    <i class="fa-solid fa-comment-dots"></i>Asunto</label>
+
+                <textarea name="Asunto" id="Asunto" rows="4"
+                placeholder="¿En qué podemos ayudarte?"></textarea>
+
+                <button type="submit" class="btn">
+                    Enviar Mensaje
+                </button>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

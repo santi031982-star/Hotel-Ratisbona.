@@ -1,0 +1,123 @@
+*{
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgb(241, 241, 241);
+}
+.container{
+    width: 100%;
+    max-width: 450px;   /*tamaño defecto*/
+}
+form{
+    background: beige;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgb(30, 30, 30);
+}
+h2{
+    color: green;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2{
+    margin-right: 10px;
+}
+.subtitle{
+    color: rgb(59, 59, 59);
+    font-size: 1rem;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.4;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: green;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+label i{
+    margin-right: 8px;
+    width: 15px;
+}
+input, textarea{
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(218, 248, 218);
+    outline: none;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+input:focus, textarea{
+    border-color:green;
+    box-shadow: 0 0 8px rgb(0, 62, 0);
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(146, 195, 146);
+}
+.form-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.form-links a{
+    color: rgb(85, 85, 85);
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.form-links a:hover{
+    color: skyblue;
+    text-decoration: underline;
+}
+.btn{
+    padding: 14px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s transform 0.2s;
+}
+.btn:hover{
+    background-color: black;
+    transform: translateY(-4px);
+}
+
+/*RESPONSIVE PARA MOVIL*/
+
+@media (max-width: 400px){
+    form{
+        padding:25px
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .font-links{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
